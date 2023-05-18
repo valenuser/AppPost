@@ -4,9 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resource/css/login.css">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <p>Login</p>
+    <header>
+        <h2><a href="/">M<i class="fa-brands fa-slack"></i>ments</a></h2>
+    </header>
+    <div class="login-form">
+        <p>Login</p>
+        <form action="login" method="post">
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+            <label for="contraseña">Contraseña</label>
+            <input type="password" name="pass" id="pass" placeholder="Contraseña">
+            <div class="btn-login">
+                <input type="submit" value="Iniciar sesion">
+                <p>No tienes una cuenta?</p>
+                <a href="register">Registrarse</a>
+            </div>
+        </form>
+    </div>
 </body>
 </html>

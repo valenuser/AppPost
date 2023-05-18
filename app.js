@@ -10,6 +10,14 @@ app.use('/resource',express.static('public'))
 app.use('/resource',express.static(__dirname+'/public'))
 
 
+const session = require('express-session')
+app.use(session({
+    secret:'secret',
+    resave:true,
+    saveUninitialized:true
+}))
+
+
 app.set('view engine','ejs')
 
 app.use('/',require('./routes/index'))

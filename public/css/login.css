@@ -1,0 +1,111 @@
+@media only screen and (max-width:768px){
+    *{
+        padding: 0;
+        margin: 0;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    body{
+        background-image: url('../image/bokeh-lights-2592859_1920.jpg');
+        background-repeat: no-repeat;
+        background-size: 100% 100vh;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: none;
+        font-size: 33px;
+        text-decoration: none;
+        border-radius:1rem;
+    }
+
+    p{
+        color: white;
+        background: none;
+        font-size: 60px;
+    }
+
+
+
+
+    header{
+        position: absolute;
+        top: 100px;
+    }
+
+    header a{
+        text-decoration: none;
+        color: white;
+        font-size: 80px;
+    }
+
+
+    .login-form{
+        backdrop-filter: url('../image/bokeh-lights-2592859_1920.jpg') blur(4px) saturate(150%);
+        color: white;
+        width: 90%;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        border: 2px solid white;
+        border-radius: 1rem;
+        margin-top: 60px;
+    }
+    .login-form p{
+        text-align: center;
+    }
+    .login-form form{
+        width: 100%;
+        height: 100vh;
+        margin: 20px;
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        flex-direction: column;
+    }
+
+    .login-form input{
+        width: 80%;
+        padding: 10px;
+        border: 1px solid white;
+        border-radius: 5px;
+        margin-bottom:10px;
+        margin-top:10px;
+        font-size: 15px;
+        background: #01052c;;
+        color: white;
+    }
+
+    .btn-login{
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .btn-login input{
+        background: #238636;
+        color: white;
+        width: 85%;
+        border: none;
+    }
+
+    .btn-login p{
+        font-size: 15px;
+    }
+    .btn-login a{
+        font-size: 15px;
+        text-decoration: none;
+        color: rgb(19, 128, 237);
+    }
+
+}
+
