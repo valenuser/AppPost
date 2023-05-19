@@ -27,6 +27,8 @@ app.use('/register',require('./routes/register'))
 
 app.use('/login',require('./routes/login'))
 
+app.use('/main',require('./routes/main'))
+
 app.listen(3000,(req,res)=>{
     console.log('SERVER RUNNING IN PORT http://locahost:3000');
 })
