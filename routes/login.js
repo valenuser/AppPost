@@ -25,7 +25,7 @@ router.post('/',(req,res)=>{
             ruta:'login'
         })
     }else{
-        pool.query('select id_user from users where user_name = ?',[nombre],(error,results)=>{
+        pool.query('select id_user from users where user_name = ? and user_pass = ?',[nombre,pass],(error,results)=>{
             if(results.length == 0 || error){
                 res.render('login',{
                     alert:true,
