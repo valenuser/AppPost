@@ -16,6 +16,8 @@ router.get('/load',(req,res)=>{
         //res.send({'hola':req.session.name});
         res.send(response);
     })
+
+
 })
 
 
