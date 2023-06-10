@@ -1,5 +1,10 @@
 const div = document.getElementById('publicaciones')
 
+const likePost = (icon) =>{
+    
+    icon.style.color = 'red'
+}
+
 const card = (data)=>{
     const newCard = document.createElement('div')
     newCard.classList.add('card')
@@ -7,10 +12,10 @@ const card = (data)=>{
     <p>${data.post_text}</p>
     <img src='${data.post_img}'>
 `
-    const p = document.createElement('i')
-    p.className = 'fa-regular fa-heart'
-
-    newCard.append(p)
+    const icon = document.createElement('i')
+    icon.className = 'fa-solid fa-heart'
+    icon.setAttribute('onclick','likePost(this)')
+    newCard.append(icon)
     return newCard
 }
 
