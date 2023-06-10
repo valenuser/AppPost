@@ -29,6 +29,6 @@ const like = (card)=>{
 
 
 
-axios.get('/main/load')
+axios.get('/profile/load')
     .then(response => addPosts(response.data))
     .catch(error => console.log(error))

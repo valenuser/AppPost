@@ -31,6 +31,8 @@ app.use('/main',require('./routes/main'))
 
 app.use('/publication',require('./routes/publication'))
 
+app.use('/profile',require('./routes/profile'))
+
 app.listen(3000,(req,res)=>{
     console.log('SERVER RUNNING IN PORT http://locahost:3000');
 })
