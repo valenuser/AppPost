@@ -1,7 +1,7 @@
 const div = document.getElementById('publicaciones')
 
 const likePost = (icon) =>{
-    
+
     icon.style.color = 'red'
 }
 
@@ -22,6 +22,7 @@ const card = (data)=>{
 
 
 const addPosts = (data)=>{
+    console.log(data);
     div.innerHTML = ''
     data.map(d=>(
         div.append(card(d))
